@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/list_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/list_view_margin"
+        android:layout_marginEnd="@dimen/list_view_margin"
+        android:background="@color/colorBlueGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/list_view_margin"
+        android:layout_marginEnd="@dimen/list_view_margin"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/playlist_name"
+            style="@style/RowTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text="Playlist 001"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/playlist_total_song"
+            style="@style/RowTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:text="13 songs"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

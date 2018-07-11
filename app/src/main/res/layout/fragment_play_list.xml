@@ -1,0 +1,61 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PlayListFragment">
+
+    <LinearLayout
+        android:id="@+id/playlist_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!--<Button
+            android:id="@+id/new_playlist_btn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="@dimen/list_view_margin"
+            android:background="@drawable/new_playlsit_btn_bg"
+            android:fontFamily="sec-roboto-condensed"
+            android:text="CREATE PLAYLIST"
+            android:textAllCaps="true"
+            android:textColor="@color/deep_purple_500"
+            android:textSize="17sp" />-->
+
+        <ListView
+            android:id="@+id/list_view_playlsit_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playlist_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/list_view_playlist_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        app:backgroundTint="@color/primary_dark_color_custom_dialog"
+        android:clickable="true"
+        android:visibility="visible"
+        app:srcCompat="@drawable/fab_add_icon" />
+
+</android.support.design.widget.CoordinatorLayout>

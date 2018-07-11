@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_marginStart="@dimen/list_view_margin"
+        android:layout_marginEnd="@dimen/list_view_margin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlueGray"/>
+
+    <TextView
+        android:id="@+id/txt_total_playlist"
+        style="@style/RowTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"/>
+
+</LinearLayout>

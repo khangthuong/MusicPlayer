@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/select_all_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="center_vertical"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:layout_marginStart="-23dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/select_all_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:clickable="false"
+            android:theme="@style/ActionBarComponentButton.Custom"/>
+
+        <TextView
+            android:id="@+id/worldclock_select_all_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="sans-serif"
+            android:importantForAccessibility="no"
+            android:includeFontPadding="true"
+            android:text="@string/all"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title.Inverse"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textSize="11dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selection_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:fontFamily="sec-roboto-condensed"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title.Inverse"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+</LinearLayout>

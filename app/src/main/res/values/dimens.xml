@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="tab_layout_height">40dp</dimen>
+    <dimen name="view_pager_layout_height">419dp</dimen>
+    <dimen name="playing_layout_height">100dp</dimen>
+    <dimen name="playing_layout_thumb_width">45dp</dimen>
+    <dimen name="playing_layout_song_infor">170dp</dimen>
+    <dimen name="playing_layout_song_action">120dp</dimen>
+    <dimen name="playing_layout_action_btn_width">20dp</dimen>
+    <dimen name="playing_layout_action_btn_width_border">30dp</dimen>
+    <dimen name="row_height">65dp</dimen>
+    <dimen name="list_view_margin">13dp</dimen>
+    <dimen name="list_view_margin_with_checkBox">11dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_right">10dp</dimen>
+    <dimen name="fab_margin_bottom">10dp</dimen>
+</resources>

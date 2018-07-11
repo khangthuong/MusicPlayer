@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/list_view_margin"
+        android:layout_marginEnd="@dimen/list_view_margin">
+
+        <ImageView
+            android:id="@+id/row_thumb"
+            android:layout_width="@dimen/row_height"
+            android:layout_height="@dimen/row_height"
+            android:padding="0.5dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/list_item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlueGray"/>
+
+            <TextView
+                android:id="@+id/row_song_name"
+                style="@style/RowTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="bottom|left"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/row_song_singer"
+                style="@style/RowTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="top|left"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
